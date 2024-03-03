@@ -63,14 +63,14 @@ def create_rfm_df(df):
     return rfm_df
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+# all_df = pd.read_csv("all_data.csv")
 
-datetime_columns = ["order_date", "delivery_date"]
-all_df.sort_values(by="order_date", inplace=True)
-all_df.reset_index(inplace=True)
+# datetime_columns = ["order_date", "delivery_date"]
+# all_df.sort_values(by="order_date", inplace=True)
+# all_df.reset_index(inplace=True)
 
-for column in datetime_columns:
-    all_df[column] = pd.to_datetime(all_df[column])
+# for column in datetime_columns:
+#     all_df[column] = pd.to_datetime(all_df[column])
 
 # Filter data
 # min_date = all_df["order_date"].min()
