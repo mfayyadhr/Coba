@@ -4,9 +4,7 @@ import seaborn as sns
 import streamlit as st
 from babel.numbers import format_currency
 
-# Helper function yang dibutuhkan untuk menyiapkan berbagai dataframe
-
-# Load cleaned data
+# Load used data 
 all_df = pd.read_csv("all_data aq.csv")
 
 # plot number of daily orders (2021)
