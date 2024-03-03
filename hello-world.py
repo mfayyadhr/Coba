@@ -104,8 +104,8 @@ from babel.numbers import format_currency
 
 # plot number of daily orders (2021)
  
-st.header('Dicoding Collection Dashboard :dash:')
-st.subheader("Best & Worst Performing Product")
+st.header('Air Quality Dashboard :dash:')
+st.subheader("Worst Air Quality by Air Pollutants")
  
 # fig, ax = plt.subplots(nrows=1, ncols=2, figsize=(35, 15))
  
