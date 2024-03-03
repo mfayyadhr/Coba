@@ -130,4 +130,4 @@ st.subheader("Worst Air Quality by Air Pollutants")
  
 # st.pyplot(fig)
 
-st.caption('Copyright © Dicoding 2023')
+st.caption('Copyright © Muhammad Fayyadh Rifqi 2024')
