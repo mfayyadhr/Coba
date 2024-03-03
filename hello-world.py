@@ -7,7 +7,7 @@ from babel.numbers import format_currency
 # Load used data 
 all_df = pd.read_csv("all_data aq.csv")
 
-# plot number of daily orders (2021)
+# plot Worst Air Quality by Air Pollutants
  
 st.header('Air Quality Dashboard :dash:')
 st.subheader("Worst Air Quality by Air Pollutants")
