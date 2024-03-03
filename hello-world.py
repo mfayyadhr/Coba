@@ -74,7 +74,7 @@ for i, x in enumerate(columns):
       sns.scatterplot(x=x, y=y, data=df1, ax=ax[i, j])
       ax[i, j].set_xlabel(x)
       ax[i, j].set_ylabel(y)
-      ax[i, j].set_title(f'{x} vs {y}', fontsize=10)
+      ax[i, j].set_title(f'{x} vs {y}', fontsize=11)
 plt.tight_layout()
 st.pyplot(fig)
 
