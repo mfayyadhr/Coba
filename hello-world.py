@@ -64,7 +64,7 @@ st.pyplot(fig)
 
 st.subheader("Scatter Plot Between Air Pollutants in Aotizhongxin")
 
-Aotizhongxin_df = pd.read_csv("all_data aq.csv")
+Aotizhongxin_df = pd.read_csv("Aotizhongxin..csv")
 df1 = Aotizhongxin_df[['PM2.5', 'PM10', 'SO2', 'NO2', 'CO', 'O3']]
 columns = df1.select_dtypes(include='number').columns
 fig, ax = plt.subplots(len(columns), len(columns), figsize=(16, 16))
