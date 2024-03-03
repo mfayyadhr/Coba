@@ -73,22 +73,22 @@ for column in datetime_columns:
     all_df[column] = pd.to_datetime(all_df[column])
 
 # Filter data
-min_date = all_df["order_date"].min()
-max_date = all_df["order_date"].max()
+# min_date = all_df["order_date"].min()
+# max_date = all_df["order_date"].max()
 
-with st.sidebar:
-    # Menambahkan logo perusahaan
-    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
+# with st.sidebar:
+#     # Menambahkan logo perusahaan
+#     st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
     
-    # Mengambil start_date & end_date dari date_input
-    start_date, end_date = st.date_input(
-        label='Rentang Waktu',min_value=min_date,
-        max_value=max_date,
-        value=[min_date, max_date]
-    )
+#     # Mengambil start_date & end_date dari date_input
+#     start_date, end_date = st.date_input(
+#         label='Rentang Waktu',min_value=min_date,
+#         max_value=max_date,
+#         value=[min_date, max_date]
+#     )
 
-main_df = all_df[(all_df["order_date"] >= str(start_date)) & 
-                (all_df["order_date"] <= str(end_date))]
+# main_df = all_df[(all_df["order_date"] >= str(start_date)) & 
+#                 (all_df["order_date"] <= str(end_date))]
 
 # st.dataframe(main_df)
 
