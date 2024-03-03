@@ -71,6 +71,37 @@ all_df.reset_index(inplace=True)
 
 for column in datetime_columns:
     all_df[column] = pd.to_datetime(all_df[column])
+
+# Filter data
+min_date = all_df["order_date"].min()
+max_date = all_df["order_date"].max()
+
+with st.sidebar:
+    # Menambahkan logo perusahaan
+    st.image("https://github.com/dicodingacademy/assets/raw/main/logo.png")
+    
+    # Mengambil start_date & end_date dari date_input
+    start_date, end_date = st.date_input(
+        label='Rentang Waktu',min_value=min_date,
+        max_value=max_date,
+        value=[min_date, max_date]
+    )
+
+main_df = all_df[(all_df["order_date"] >= str(start_date)) & 
+                (all_df["order_date"] <= str(end_date))]
+
+# st.dataframe(main_df)
+
+# # Menyiapkan berbagai dataframe
+daily_orders_df = create_daily_orders_df(main_df)
+sum_order_items_df = create_sum_order_items_df(main_df)
+bygender_df = create_bygender_df(main_df)
+byage_df = create_byage_df(main_df)
+bystate_df = create_bystate_df(main_df)
+rfm_df = create_rfm_df(main_df)
+
+
+# plot number of daily orders (2021)
  
 st.header('Dicoding Collection Dashboard :sparkles:')
 st.subheader("Best & Worst Performing Product")
