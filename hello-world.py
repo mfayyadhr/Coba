@@ -75,7 +75,7 @@ for i, x in enumerate(columns):
       ax[i, j].set_xlabel(x)
       ax[i, j].set_ylabel(y)
       ax[i, j].set_title(f'{x} vs {y}', fontsize=11)
-      plt.tight_layout()
+plt.tight_layout()
 st.pyplot(fig)
 
 st.caption('Copyright © Muhammad Fayyadh Rifqi 2024')
