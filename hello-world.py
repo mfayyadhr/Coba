@@ -7,7 +7,7 @@ from babel.numbers import format_currency
 # Helper function yang dibutuhkan untuk menyiapkan berbagai dataframe
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("all_data aq.csv")
 
 # plot number of daily orders (2021)
  
