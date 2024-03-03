@@ -14,7 +14,7 @@ all_df = pd.read_csv("all_data aq.csv")
 st.header('Air Quality Dashboard :dash:')
 st.subheader("Worst Air Quality by Air Pollutants")
  
-fig, ax = plt.subplots(nrows=3, ncols=2, figsize=(30, 20))
+fig, ax = plt.subplots(nrows=3, ncols=2, figsize=(15, 12))
 colors = ["#72BCD4", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3", "#D3D3D3"]
 
 sns.barplot(x='PM2.5', y='station', data=all_df.sort_values(by="PM2.5", ascending=False), palette=colors, ax=ax[0, 0])
