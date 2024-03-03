@@ -62,6 +62,7 @@ ax[2, 1].tick_params(axis='y', labelsize=12)
  
 st.pyplot(fig)
 
+# plot Scatter Plot Between Air Pollutants of all station
 st.subheader("Scatter Plot Between Air Pollutants in Aotizhongxin")
 
 Aotizhongxin_df = pd.read_csv("https://raw.githubusercontent.com/mfayyadhr/Coba/main/data/Aotizhongxin.csv")
